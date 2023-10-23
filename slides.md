@@ -138,7 +138,7 @@ level: 2
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
-```ts {all|3|7||11}
+```ts {all|3|7|11|all}
 # SYSTEM
 
 SYSTEM 提供有关在整个对话过程中应如何表现的具体说明，有助于控制输出的内容
@@ -229,7 +229,7 @@ class: prompt-1
 
 ### 1.1 使用分隔符清晰地表示不同的输入部分
 
-可以选择用 ````，"""，< >，<tag> </tag>，:` 等做分隔符，只要能明确起到隔断作用即可
+可以选择用 **```，"""，< >，\<tag> \</tag>** 等做分隔符，只要能明确起到隔断作用即可
 
 避免不恰当的用户输入，改变原有的`Gpt`行为
 
@@ -265,7 +265,7 @@ class: prompt-1
 
 通用 Prompt 模版 = context + step + shot + question
 
-```js {all|3-4|5-8|9-15|16-18|19-23|all}
+```js {all|3-4|5-8|9-15|16-18|20-23|all}
 const question = "霸王龙"
 const prompt = `
 （context）
